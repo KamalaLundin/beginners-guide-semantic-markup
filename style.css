@@ -24,16 +24,27 @@ h3 {
 }
 
 .banner {
-    background: rgb(213, 252, 255);
-    background: linear-gradient(349deg, rgba(213, 252, 255, 1) 0%, rgba(191, 251, 255, 1) 35%, rgba(150, 248, 255, 1) 100%);
-    height: 8em;
+    /* background: rgb(213, 252, 255); */
+    background-color: #425657;
+    color: #fff;
+    height: 7em;
+    padding-left: 1em;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
-.banner-title {}
+.banner-img {
+   height: 6em;
+   margin-top: 1em;
+   position: sticky;
+   top: .5em;
+}
 
+/* .banner-title {
+    font-size: 1.8rem;
+}
+ */
 .wrapper {
     margin: 1em;
     display: grid;
@@ -41,12 +52,42 @@ h3 {
 }
 
 .main {
-    grid-column: 3 / -2;
+    margin-top: -22em;
+    grid-column: 3 / -1;
 }
 
 .navigation {
+    /* grid-column: 1 / 3; */
+    /* z-index: -1; */
     position: sticky;
     top: 3em;
+    padding-left: 1em;
+}
+
+.navigation li {
+    padding: .5em;
+}
+
+.navigation a {
+    color: #181d1d;
+    font-weight: bold;
+    line-height: 3px;    
+    text-decoration: underline dotted #6c63ff 2.5px;
+}
+
+.navigation a:hover {
+    color: #181d1d;
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    /* funkar ej */
+    text-decoration: none;
+}
+
+.navigation a:active,
+.navigation a:focus {
+    color: #6c63ff;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .footer {
