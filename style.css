@@ -46,7 +46,7 @@ h3 {
 }
  */
 .wrapper {
-    margin: 1em;
+    margin: 2em;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
@@ -68,14 +68,16 @@ h3 {
     padding: .5em;
 }
 
-.navigation a {
+.navigation a,
+#welcome a {
     color: #181d1d;
     font-weight: bold;
     line-height: 3px;    
     text-decoration: underline dotted #6c63ff 2.5px;
 }
-
-.navigation a:hover {
+/* FUNKAR EJ NEDAN */
+.navigation a:hover,
+#welcome a:hover {
     color: #181d1d;
     font-size: 1.2rem;
     /* font-weight: 600; */
