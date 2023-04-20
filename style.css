@@ -41,10 +41,6 @@ h3 {
    top: .5em;
 }
 
-/* .banner-title {
-    font-size: 1.8rem;
-}
- */
 .wrapper {
     margin: 2em;
     display: grid;
@@ -57,40 +53,35 @@ h3 {
 }
 
 .navigation {
-    /* grid-column: 1 / 3; */
-    /* z-index: -1; */
+    /* a width is needed, otherwise the navigation covers the links of #welcome so that they don't work */
+    width: 310px;    
     position: sticky;
     top: 3em;
     padding-left: 1em;
 }
 
 .navigation li {
-    padding: .5em;
+    padding: .8em;
 }
 
-.navigation a,
-#welcome a {
+/* links */
+
+a {
     color: #181d1d;
     font-weight: bold;
-    line-height: 3px;    
     text-decoration: underline dotted #6c63ff 2.5px;
 }
-/* FUNKAR EJ NEDAN */
-.navigation a:hover,
+
+.navigation li>a:hover,
+.navigation li>a:active,
+/*varför funkar inte focus i firefox?*/
+.navigation li>a:focus,
 #welcome a:hover {
-    color: #181d1d;
-    font-size: 1.2rem;
-    /* font-weight: 600; */
-    /* funkar ej */
     text-decoration: none;
+    color: #6c63ff;
 }
 
-.navigation a:active,
-.navigation a:focus {
-    color: #6c63ff;
-    font-size: 1.2rem;
-    text-decoration: none;
-}
+
 
 .footer {
     background-color: #425657;
