@@ -36,8 +36,7 @@
             <!-- Använda article i stället för section? -->
             <section id="welcome">
                 <h2>Welcome!</h2>
-                <p>Do you want to learn the basics of semantic HTML markup? What it is, how to do it and why it matters?
-                    Then you are in the right place!</p>
+                <p>Do you want to learn the basics of semantic HTML markup? Then you are in the right place!</p>
                 <p>Let’s get you started by learning <a href="#why">why semantic markup is important</a> or jump straight
                     to a list of <a href="#elements">the most important semantic HTML elements</a>.</p>
             </section>
@@ -79,80 +78,75 @@
                         <tr>
                             <th>HTML markup</th>
                             <th>What is it?</th>
-                            <th>How to use it?</th>
                             <th>Useful tips</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>&lt;title&gt;</td>
-                            <td>The title element is telling us the title of the webpage. The content between the tags
-                                is
-                                shown in
-                                the browser's title bar or tab and will be the default if a user adds the page to their
-                                favourite.
-                                The title will also we shown in as the title for a page in a search engine result. </td>
-                            <td></td>
-                            <td>The title element should go in the &lt;head&gt; element in the HTML. It does not go in
-                                the
-                                &lt;body&gt; of the document.</td>
+                            <td>
+                                &lt;title&gt;
+                            </td>
+                            <td>
+                                The title element is telling us the title of the webpage. The content between the tags is shown in the browser's title bar or tab and will be the default bookmark name if a user adds the page to their favorites. The title will also be shown in as the title for a page in a search engine result.
+                            </td>
+                            <td>
+                                The title element should go in the &lt;head&gt; element in the HTML. It does not go in the &lt;body&gt; of the document.
+                            </td>
                         </tr>
                         <tr>
                             <td>&lt;header&gt;</td>
-                            <td>The header element is a container for introductory content such as logo, company name,
-                                search
-                                feature, headings and navigational links. It usually works as a banner for the page and
-                                is
-                                re-used
-                                globally across the website.
-                                However, it can also be used within an article or a section to represent the
-                                introduction to
-                                that
-                                particular piece of content.</td>
-                            <td></td>
-                            <td>The header usually goes in the top of the page, unless it is nested within an article or
-                                a
-                                section -
-                                in which case it goes in the top of that element.</td>
+                            <td>
+                                The &lt;header&gt; element is a container for introductory content such as logo, company name, search feature, headings and navigation links. It usually works as a banner for the page, re-used globally across the website. However, it can also be used within an &lt;article&gt; or a &lt;section&gt; to represent the introduction to that particular piece of content.
+                            </td>
+                            <td>
+                                The &lt;header&gt; usually goes in the top of the page, unless it is nested within an &lt;article&gt; or a &lt;section&gt; - in which case it goes in the top of that particular element.
+                            </td>
                         </tr>
                         <tr>
                             <td>&lt;nav&gt;</td>
-                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime mollitia veniam
-                                sapiente
-                                neque
-                                porro, rem magnam temporibus officiis inventore iure!</td>
-                            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime mollitia veniam
-                                sapiente neque porro, rem magnam temporibus officiis inventore iure!</td>
-                            <td></td>
+                            <td>
+                                The &lt;nav&gt; element is a container for a block of navigation links, for example a menu. It is often nested inside other element such as the &lt;header&gt;. The navigation links can lead to other sections of the same page, to other pages on the same site or to other websites.
+                            </td>
+                            <td>
+                                Not all links must be placed within in a &lt;nav&gt; element!
+                            </td>
                         </tr>
                         <tr>
                             <td>&lt;main&gt;</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                The &lt;main&gt; element contains the primary content of that particular page. The content should be directly related to the topic of that particular page. The content of the &lt;header&gt; and &lt;footer&gt;, for example, is often more generic and will not be included in the main element.
+                            </td>
+                            <td>
+                                There shouldn’t be more than one &lt;main&gt; element in one page! So unlike the &lt;header&gt; and &lt;footer&gt; element, we don’t have the option to nest it within an &lt;article&gt; or a &lt;section&gt;.
+                            </td>
                         </tr>
                         <tr>
                             <td>&lt;aside&gt;</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                The &lt;aside&gt; element is used for content that is secondary to the main content of the page. The content is typically separate, but indirectly related to the main content. Examples include additional information, advertisement and navigations.                            </td>
+                            <td>The &lt;aside&gt; element is often used for sidebars!</td>
                         </tr>
                         <tr>
                             <td>&lt;footer&gt;</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                The &lt;footer&gt; element holds content that improves the site's usability. It goes at the very bottom of the page and is typically re-used globally across the site. From here the user can usually navigate the site through a site-map, and easily reach things like contact information, social media links, privacy policies, copyright data and information about the author.
+                            </td>
+                            <td>
+                                Similarly to the &lt;header&gt; element, a &lt;footer&gt; element can also be nested within an &lt;article&gt; or a &lt;section&gt;! The main &lt;footer&gt; always goes at the bottom of the page though.
+                            </td>
                         </tr>
                         <tr>
                             <td>&lt;article&gt;</td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                The &lt;article&gt; element is used for content that can stand on it's own - for example a blog post, a newspaper article, a product review or a comment.
+                            </td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>&lt;section&gt;</td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                The &lt;section&gt; element is used to divide content into logical sub-sections. A &lt;section&gt; element typically groups related content together. An &lt;article&gt; element, for example, could include a few &lt;section&gt; elements, or a &lt;main&gt; element of a page could be divided into a few different &lt;section&gt; elements.
+                            </td>
                             <td></td>
                         </tr>
                         <tr>
