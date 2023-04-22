@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
 }
 
 body {
@@ -37,8 +35,7 @@ h3 {
 .banner-img {
    height: 6em;
    margin-top: 1em;
-   position: sticky;
-   top: .5em;
+   bottom: 22em;
 }
 
 .wrapper {
@@ -48,16 +45,19 @@ h3 {
 }
 
 .main {
-    margin-top: -22em;
+    /* finns det någon snyggare lösning på nedan? */
+    margin-top: -46em;
     grid-column: 3 / -1;
 }
 
 .navigation {
     /* a width is needed, otherwise the navigation covers the links of #welcome so that they don't work */
-    width: 310px;    
+    width: 310px;
     position: sticky;
+    position: -webkit-sticky;
     top: 3em;
     padding-left: 1em;
+    margin-bottom: 24em;
 }
 
 .navigation li {
@@ -81,12 +81,29 @@ a {
     color: #6c63ff;
 }
 
-
-
 .footer {
     background-color: #425657;
     color: white;
-    height: 12em;
+    height: 22em;
+    padding: 2em;
+}
+
+.footer h3 {
+    text-align: left;
+}
+
+.footer p {
+    font-size: .9rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: end;
+}
+
+.footer-container section {
+    margin: 0;
+    width: 50%;
 }
 
 section {
