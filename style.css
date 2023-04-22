@@ -76,7 +76,7 @@ a {
 .navigation li>a:active,
 /*varför funkar inte focus i firefox?*/
 .navigation li>a:focus,
-#welcome a:hover {
+.main a:hover {
     text-decoration: none;
     color: #6c63ff;
 }
