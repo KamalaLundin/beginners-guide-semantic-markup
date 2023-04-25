@@ -81,11 +81,13 @@ a {
     color: #6c63ff;
 }
 
+/* footer */
+
 .footer {
     background-color: #425657;
     color: white;
-    height: 22em;
-    padding: 2em;
+    /* height: 20em; */
+    padding: 1em 2em;
 }
 
 .footer h3 {
@@ -96,14 +98,33 @@ a {
     font-size: .9rem;
 }
 
+.footer i {
+    font-size: 1.5rem;
+    margin-right: .5em;
+}
+
 .footer-container {
     display: flex;
-    align-items: end;
+    justify-content: space-between;
 }
 
 .footer-container section {
     margin: 0;
-    width: 50%;
+    width: 45%;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 3em;
+}
+
+/* #links p,
+#links li {
+    text-align: center;
+} */
+
+#links li {
+    margin-bottom: 1em;
 }
 
 section {
@@ -114,6 +135,11 @@ table {
     border: 1px solid #425657;
     width: 100%;
     border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
 }
 
 td {
