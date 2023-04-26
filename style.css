@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 * {
     box-sizing: border-box;
 }
@@ -6,6 +8,10 @@ body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
     color: #181d1d;
+}
+
+section {
+    margin: 5em 0;
 }
 
 ul {
@@ -21,8 +27,24 @@ h3 {
     letter-spacing: .1rem;
 }
 
+a {
+    color: #181d1d;
+    font-weight: bold;
+    text-decoration: underline dotted #6c63ff 2.5px;
+}
+
+.navigation li>a:hover,
+.navigation li>a:active,
+.navigation li>a:focus,
+.main a:hover {
+    text-decoration: none;
+    color: #6c63ff;
+}
+
+
+/* BANNER */
+
 .banner {
-    /* background: rgb(213, 252, 255); */
     background-color: #425657;
     color: #fff;
     height: 7em;
@@ -38,17 +60,21 @@ h3 {
    bottom: 22em;
 }
 
-.wrapper {
+/* MAIN CONTENT */
+
+.main-wrapper {
     margin: 2em;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
 
 .main {
-    /* finns det någon snyggare lösning på nedan? */
     margin-top: -46em;
     grid-column: 3 / -1;
 }
+
+
+/* NAVIGATION */
 
 .navigation {
     /* a width is needed, otherwise the navigation covers the links of #welcome so that they don't work */
@@ -64,72 +90,8 @@ h3 {
     padding: .8em;
 }
 
-/* links */
 
-a {
-    color: #181d1d;
-    font-weight: bold;
-    text-decoration: underline dotted #6c63ff 2.5px;
-}
-
-.navigation li>a:hover,
-.navigation li>a:active,
-/*varför funkar inte focus i firefox?*/
-.navigation li>a:focus,
-.main a:hover {
-    text-decoration: none;
-    color: #6c63ff;
-}
-
-/* footer */
-
-.footer {
-    background-color: #425657;
-    color: white;
-    /* height: 20em; */
-    padding: 1em 2em;
-}
-
-.footer h3 {
-    text-align: left;
-}
-
-.footer p {
-    font-size: .9rem;
-}
-
-.footer i {
-    font-size: 1.5rem;
-    margin-right: .5em;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-container section {
-    margin: 0;
-    width: 45%;
-}
-
-.footer-copyright {
-    text-align: center;
-    margin-top: 3em;
-}
-
-/* #links p,
-#links li {
-    text-align: center;
-} */
-
-#links li {
-    margin-bottom: 1em;
-}
-
-section {
-    margin: 5em 0;
-}
+/* TABLE */
 
 table {
     border: 1px solid #425657;
@@ -161,4 +123,48 @@ td,
 th {
     padding: .5em;
     border: 1px solid #ccc;
+}
+
+
+/* USEFUL LINKS */
+
+#links li {
+    margin-bottom: 1em;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #425657;
+    color: white;
+    padding: 1em 2em;
+}
+
+.footer h3 {
+    text-align: left;
+}
+
+.footer p {
+    font-size: .9rem;
+}
+
+.footer i {
+    font-size: 1.5rem;
+    margin-right: .5em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container section {
+    margin: 0;
+    width: 45%;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 3em;
 }
